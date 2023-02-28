@@ -4,16 +4,18 @@ import java.util.Scanner;
 
 public class Palindromes { // MADAM // 34543
 	
+	public static Scanner sc = new Scanner(System.in);
+	
 	public static void main(String[] args) {
 		numericPalindrome();
 		stringPalindrome();
+		sc.close();
 	}
 	
 	private static void numericPalindrome() {
 		System.out.println("Enter range to display palindrome");
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		int palInt = sc.nextInt();
-		sc.close();
 		int tempNum, digit, palValue = 0;
 		
 		for(int i=1;i<=palInt;i++) {
@@ -32,9 +34,8 @@ public class Palindromes { // MADAM // 34543
 	
 	private static void stringPalindrome() {
 		System.out.println("Enter string to check palindrome");
-		Scanner sc = new Scanner(System.in);
+		sc = new Scanner(System.in);
 		String input = sc.nextLine();
-		sc.close();
 		int n = input.length()-1;
 		String palString = "";
 		for (int i = n; i >= 0; i--) {
