@@ -58,7 +58,6 @@ public class DuplicateWordandLetter {
 		dupLet();
 		System.out.println();
 		dupWord();
-		System.out.println(); // delete this at web
 		wordCount();
 		System.out.println();
 		letterCount();
