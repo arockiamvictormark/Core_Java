@@ -1,8 +1,12 @@
 package famous.legends;
 
 public class Sort_Ascending_Descending {
-	static int num[] = {5,2,8,7,1};
 	
+	public static void main(String[] args) {
+		ascending_order();
+		decending_order();
+	}	
+	static int num[] = {5,2,8,7,1};	
 	private static void ascending_order() {
 		int temp;		
 		for (int i = 0; i < num.length; i++) {
@@ -18,8 +22,7 @@ public class Sort_Ascending_Descending {
 		for (int k = 0; k < num.length; k++) {
 			System.out.print(num[k]+" ");
 		}
-	}
-	
+	}	
 	private static void decending_order() {
 		int temp;
 		for (int i = 0; i < num.length; i++) {
@@ -35,11 +38,6 @@ public class Sort_Ascending_Descending {
 		for (int k = 0; k < num.length; k++) {
 			System.out.print(num[k]+" ");
 		}
-	}
-	
-	public static void main(String[] args) {
-		ascending_order();
-		decending_order();
 	}
 
 }
