@@ -1,4 +1,4 @@
-package famous.legends;
+package common.programs;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -33,7 +33,7 @@ public class DuplicateWordandLetter {
 	
 	private static void dupWord() {
 		String s = "welcome god god god here here where";
-		System.out.println("words: "+s);
+		System.out.println("\nwords: "+s);
 		String[] words = s.split(" ");
 		Map<String, Integer> wordMap = new HashMap<String, Integer>();
 		for (String string : words) {
@@ -56,16 +56,14 @@ public class DuplicateWordandLetter {
 
 	public static void main(String[] args) {
 		dupLet();
-		System.out.println();
 		dupWord();
 		wordCount();
-		System.out.println();
 		letterCount();
 	}
 	
 	private static void wordCount() {
 		String s = "welcome to java class java course to java";
-		System.out.println("word: "+s);
+		System.out.println("\nword: "+s);
 		String[] words = s.split(" ");
 		Map<String, Integer> wordMap = new LinkedHashMap<String, Integer>();
 		for (String string : words) {
@@ -81,7 +79,7 @@ public class DuplicateWordandLetter {
 	
 	private static void letterCount() {
 		String s = "welcome to java class java course to java";
-		System.out.println("letter: "+s);
+		System.out.println("\nletter: "+s);
 		char[] charArray = s.toCharArray();
 		Map<Character, Integer> charMap = new LinkedHashMap<Character, Integer>();
 		for (char c : charArray) {

@@ -17,7 +17,7 @@ public class Odd_Even_Check {
 		}
 		else { 
 			System.out.println("The number '"+check+"' is ODD"); 
-		}
+		}		
 
 	}
 
